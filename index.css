@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+.container {
+    background-color: black;
+    display: flex;
+    width: 100vw;
+}
+
+.navbar {
+    position: absolute;
+    right: -400px;
+    width: 450px;
+    height: 100%;
+    background: black;
+    text-align: center;
+    transition: 0.8s ease;
+}
+
+.navbar > .side-nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.nav-item {
+    display: flex;
+}
+
+.nav-item > .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    margin: 1em;
+    flex: 1;
+}
+
+.nav-item > .nav-link:hover {
+    color: black;
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;  
+}
+
+.side-nav > .nav-footer {
+    text-align: center;
+    margin-bottom: 3%;
+}
+
+.toggle-collapse {
+    float: left;
+    margin-left: -2em;
+    margin-top: 2em;
+    content: "";
+    outline: inherit;
+    border: 0px;
+    background: transparent;
+}
+
+
+
+.toggle-icon::before,
+.toggle-icon::after {
+    content: "";
+    width: 30px;
+    height: 1px;
+    position: fixed;
+    background-color: white;
+    border-radius: 2em;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.8s ease;
+    margin-top: 0.8em;
+}
+
+.toggle-icon {
+    position: fixed;
+    cursor: pointer;
+    margin-top: 0.8em;
+    transition: 0.8s ease;
+    content: "";
+    height: 1px;
+}
+
+.toggle-icon::before {
+    position: absolute;
+    left: -1px;
+    top : 10px;
+    margin-top: -0.8em;
+    transform: rotate(-45deg);
+}
+
+.toggle-icon::after {
+    position: absolute;
+    left: -1px;
+    top : -8.5px;
+    margin-top: 0.6em;
+    width: 30px;
+    transform: rotate(45deg);
+}
+
+.toggle-icon {
+    width: 15px;
+}
+
+.close .toggle-icon{    
+    width: 30px;
+    content: "";
+    height: 1px;
+    position: fixed;
+    background-color: white;
+    border-radius: 2em;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.8s ease;
+    margin-top: 0.8em;
+}
+
+.close .toggle-icon::before{
+    width: 30px;
+    transform: rotate(0deg);
+    top : 0px;
+}
+
+.close .toggle-icon::after{
+    width: 30px;
+    top : 0px;
+    transform: rotate(0deg);
+}
+
+.main-item {
+    width: 100vw;
+    margin-top: 15vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main-child {
+    width: 60vw;
+    height: 30vw;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.main-video {
+    height: inherit;
+    position: absolute;
+    width: inherit;
+}
+
+.item-title {
+    height: inherit;
+    position: absolute;
+    width: inherit;
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 8rem;
+    line-height: 450px;
+}
+
+.item-title > a {
+    height: inherit;
+    position: initial;
+    width: inherit;
+}
