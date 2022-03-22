@@ -10,11 +10,11 @@ body {
 .container {
     background-color: black;
     display: flex;
-    width: 100vw;
+    width: 101vw;
 }
 
 .navbar {
-    position: absolute;
+    position: fixed;
     right: -400px;
     width: 450px;
     height: 100%;
@@ -27,8 +27,7 @@ body {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    height: 100%;
-    background: black;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -143,12 +142,33 @@ body {
     transform: rotate(0deg);
 }
 
+
+.main-box {
+    display: flex;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-padding-top: 20vh;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.main-box .main-item {
+    scroll-snap-align: center;
+}
+
 .main-item {
-    width: 100vw;
-    margin-top: 15vh;
+    width: 104vw;
+    margin-top: 20vh;
+    margin-bottom: 5vh;
+    padding-bottom: 20vh;
     align-items: center;
     display: flex;
     justify-content: center;
+}
+
+.main-item:last-child {
+    margin-bottom: 0;
 }
 
 .main-child {
@@ -158,27 +178,22 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
+    left: -3em;
 }
 
 .main-video {
-    height: inherit;
+    width: 60vw;
+    height: 30vw;
     position: absolute;
-    width: inherit;
 }
 
 .item-title {
-    height: inherit;
+    width: 60vw;
+    height: 30vw;
     position: absolute;
-    width: inherit;
     font-weight: bold;
     text-align: center;
     white-space: nowrap;
     font-size: 8rem;
     line-height: 450px;
-}
-
-.item-title > a {
-    height: inherit;
-    position: initial;
-    width: inherit;
 }
