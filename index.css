@@ -22,6 +22,7 @@ body {
     background: black;
     text-align: center;
     transition: 0.8s ease;
+    z-index: 1;
 }
 
 .navbar > .side-nav {
