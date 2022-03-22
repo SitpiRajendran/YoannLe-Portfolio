@@ -6,7 +6,7 @@ function openMenu(e) {
     right = Style.getPropertyValue("right");
 
     if (right == "-50px") {
-        elem.style.right = "-400px";
+        elem.style.right = "-450px";
     } else {
         elem.style.right = "-50px";
     }

@@ -21,6 +21,8 @@
 
 
 #stars {
+    position: absolute;
+    top: -1px;
     width: 1px;
     height: 1px;
     background: transparent;
@@ -207,7 +209,7 @@
 #stars:after {
     content: '';
     position: absolute;
-    top: 100vh;
+    top: 99vh;
     width: 1px;
     height: 1px;
     background: transparent;
@@ -391,6 +393,8 @@
 }
 
 #stars2 {
+    position: absolute;
+    top: -2px;
     width: 2px;
     height: 2px;
     background: transparent;
@@ -451,7 +455,7 @@
 #stars2:after {
     content: '';
     position: absolute;
-    top: 100vh;
+    top: 99vh;
     width: 2px;
     height: 2px;
     background: transparent;
@@ -509,6 +513,8 @@
 }
 
 #stars3 {
+    position: absolute;
+    top: -3px;
     width: 3px;
     height: 3px;
     background: transparent;
@@ -544,7 +550,7 @@
 #stars3:after {
     content: '';
     position: absolute;
-    top: 100vh;
+    top: 99vh;
     width: 3px;
     height: 3px;
     background: transparent;

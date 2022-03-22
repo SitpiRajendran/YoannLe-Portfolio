@@ -5,6 +5,7 @@ body {
     color: white;
     background-color: black;
     overflow-x: hidden;
+    margin: 0;
 }
 
 .container {
@@ -15,7 +16,7 @@ body {
 
 .navbar {
     position: fixed;
-    right: -400px;
+    right: -450px;
     width: 450px;
     height: 100%;
     background: black;
@@ -44,6 +45,7 @@ body {
     font-size: 3em;
     font-weight: bold;
     margin: 1em;
+    margin-left: 0;
     flex: 1;
 }
 
@@ -63,7 +65,7 @@ body {
 
 .toggle-collapse {
     float: left;
-    margin-left: -2em;
+    margin-left: -5em;
     margin-top: 2em;
     content: "";
     outline: inherit;
@@ -185,6 +187,7 @@ body {
     width: 60vw;
     height: 30vw;
     position: absolute;
+    filter: brightness(80%)
 }
 
 .item-title {

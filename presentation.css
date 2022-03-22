@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+}
+
+.fullsize {
+    height: 100vh;
+    width: 100vw;
+    background-color: transparent !important;
+}
+
+.video {
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+
+.presentation-video {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: .8;
+    animation: fadeIn 4s
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:.8;}
+}
+
+.presentation-text {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation-title {
+    font-size: 15em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    margin-right: 500px;
+    animation-name: leftArrives;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+    animation-iteration-count: 1;
+}
+
+@keyframes leftArrives {
+    0% {opacity:0;margin-right: 500px;}
+    100% {opacity:1; margin-right: 0px;}
+}
+
+.presentation-description {
+    font-size: 1em;
+    margin: 10px;
+    padding: 0;
+    opacity: 0;
+    animation-name: fadeOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+
+}
+
+@keyframes fadeOut {
+    0% {opacity:0;}
+    100% {opacity:100;}
+}
+
+.play-btn {
+    width: 0; 
+    height: 0; 
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
+    border-left: 70px solid white;
+    margin-right: 20px;
+    margin-top: 20px;
+    opacity: 0;
+    animation-name: fadeOut;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+}
+
+.text-in-play {
+    margin:-10px 0 0 -60px;
+    color: black;
+}
+
+
+.video-only {
+    height: 75%;
+    width: 75%;
+    margin-top: 7%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.back-link {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-left: 8%;
+    top: 41px;
+    margin-top: 10px;
+    position: relative;
+}
