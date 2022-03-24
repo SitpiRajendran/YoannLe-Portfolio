@@ -14,10 +14,6 @@ body {
   width: 100vw;
 }
 
-.content {
-    max-width: 100vw;
-}
-
 .logo-main {
   max-width: 3vw;
   position: fixed;
@@ -209,43 +205,46 @@ body {
 }
 
 @media screen and (max-width: 800px) {
-    .logo-main {
-        max-width: 7.5vw;
-        margin-left: 7.5vw;
-        margin-top: 7.5vw;
-    }
+  .logo-main {
+    max-width: 7.5vw;
+    margin-left: 7.5vw;
+    margin-top: 7.5vw;
+  }
 
-    .item-title {
-        font-size: 7.5vw;
-    }
-    .navbar {
-        right: -100vw;
-        width: 100vw;
-    }
+  .item-title {
+    font-size: 7.5vw;
+  }
+  .navbar {
+    right: -100vw;
+    width: 100vw;
+  }
 
-    .nav-item > .nav-link {
-        font-size: 10vw;
-        margin-left: 1em;
-    }
+  .nav-item > .nav-link {
+    font-size: 10vw;
+    margin-left: 1em;
+  }
 
-    .close .toggle-icon {
-        margin-left: 0;
-        margin-top: 2vh;
-    }
+  .close .toggle-icon {
+    margin-left: 0;
+    margin-top: 2vh;
+  }
 
-    .toggle-icon {
-        margin-top: 2vh;
-        margin-left: 21.5vw;
-    }
+  .toggle-icon {
+    margin-top: 2vh;
+    margin-left: 21.5vw;
+  }
 
+  .main-item:first-child {
+    margin-top: 20vh;
+  }
 
-    .main-item:first-child {
-        margin-top: 20vh;
-    }
+  .main-item {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 10vh;
+  }
 
-    .main-item {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-bottom: 10vh;
-    }
+  .content {
+    max-width: 100vw;
+  }
 }
