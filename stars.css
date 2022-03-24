@@ -591,3 +591,13 @@
         transform: translateY(-2000px);
     }
 }
+
+@media screen and (max-width: 800px) {
+    #title {
+        top: 11vh;
+        font-size: 5vw;
+
+        color: white;
+        text-shadow: none
+    }
+}
